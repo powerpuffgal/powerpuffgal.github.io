@@ -172,6 +172,8 @@ h1 em { font-style: italic; background: var(--grad-main); -webkit-background-cli
 .contact { margin-top: 60px; background: var(--grad-band); border: 1px solid var(--line); border-radius: 24px; padding: 40px; display: grid; gap: 14px; }
 .contact h2 { font-size: clamp(34px, 4.8vw, 46px); }
 .contact .links { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center; }
+.emails { display: grid; gap: 10px; }
+.erow { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 18px; }
 .email { font: 600 20px var(--mono); overflow-wrap: anywhere; }
 .copy { background: var(--grad-main); color: #fff; border: 0; border-radius: 999px; padding: 10px 22px; font: 600 16px var(--body); cursor: pointer; transition: transform .2s; }
 .copy:hover { transform: translateY(-2px); }
@@ -487,9 +489,11 @@ button.skill[aria-pressed="true"] { background: var(--grad-main); color: #fff; b
   <section class="contact" id="contact" aria-labelledby="contact-h">
     <h2 id="contact-h">Let's talk</h2>
     <p>Open to roles in finance and AI in Singapore, including private banking and wealth management. I am happy to talk through any of this work, in person or by email.</p>
+    <div class="emails">
+      <div class="erow"><span class="email">singhmanya1112@gmail.com</span><button type="button" class="copy" data-copy>Copy email</button></div>
+      <div class="erow"><span class="email">singh.manya@u.nus.edu</span><button type="button" class="copy" data-copy>Copy school email</button></div>
+    </div>
     <div class="links">
-      <span class="email" id="email-text">singhmanya1112@gmail.com</span>
-      <button type="button" class="copy" id="copy-email">Copy email</button>
       <a href="https://www.linkedin.com/in/singh-manya0102" target="_blank" rel="noopener">LinkedIn</a>
       <a href="https://github.com/powerpuffgal" target="_blank" rel="noopener">GitHub</a>
     </div>
@@ -500,15 +504,16 @@ button.skill[aria-pressed="true"] { background: var(--grad-main); color: #fff; b
 
 <script>
 (() => {
-  const btn = document.getElementById("copy-email"), note = document.getElementById("copy-note"), text = document.getElementById("email-text");
-  btn.addEventListener("click", async () => {
-    try { await navigator.clipboard.writeText(text.textContent.trim()); note.textContent = "Email copied."; }
+  const note = document.getElementById("copy-note");
+  document.querySelectorAll("[data-copy]").forEach((btn) => btn.addEventListener("click", async () => {
+    const text = btn.parentElement.querySelector(".email");
+    try { await navigator.clipboard.writeText(text.textContent.trim()); note.textContent = "Copied " + text.textContent.trim() + "."; }
     catch (e) {
       const r = document.createRange(); r.selectNodeContents(text);
       const s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
       note.textContent = "Select and copy the address above.";
     }
-  });
+  }));
   const calm = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   // work and timeline filters
