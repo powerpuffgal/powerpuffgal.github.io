@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="description" content="Manya Singh: regional FP&amp;A analyst in Singapore. NUS Economics (Honours, Distinction). Finance and AI work: APAC planning, AI-generated reporting with the controls built in, research agents.">
+<meta name="description" content="Manya Singh: regional FP&amp;A analyst in Singapore. NUS Economics (Honours, Distinction). Finance, markets and AI work: APAC planning, AI-generated reporting with the controls built in, research agents, and desk work samples on public data.">
 <meta property="og:title" content="Manya Singh">
 <meta property="og:description" content="Regional FP&amp;A analyst in Singapore. I make finance numbers faster to produce and easier to check.">
 <style>html{-webkit-text-size-adjust:100%}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
@@ -212,6 +212,13 @@ footer { padding-block: 28px 56px; color: var(--muted); font-size: 15px; }
 .timeline > li[hidden] { display: none; }
 .timeline .more-in ul { padding-top: 8px; font-size: 16.5px; }
 
+.grades { display: flex; flex-wrap: wrap; gap: 6px; }
+.grades span { font-size: 16px; border: 1px solid var(--line); border-radius: 999px; padding: 3px 12px; background: var(--bg); color: var(--muted); }
+.grades b { color: var(--emerald); font-weight: 700; }
+.lead { margin: 0; padding: 0 0 0 20px; display: grid; gap: 8px; color: var(--muted); font-size: 17px; }
+.lead li::marker { color: var(--teal); }
+.lead b { color: var(--ink); font-weight: 700; }
+
 /* skill chips that point at the work */
 button.skill { font: inherit; font-size: 16px; color: var(--ink); cursor: pointer; border: 1px solid var(--line); border-radius: 999px; padding: 3px 12px; background: var(--bg); transition: background .2s, border-color .2s, color .2s; }
 button.skill:hover { border-color: var(--emerald); background: var(--emerald-soft); }
@@ -252,15 +259,15 @@ button.skill[aria-pressed="true"] { background: var(--grad-main); color: #fff; b
     <div class="top">
       <a class="mark" href="#top" id="top"><i>MS</i>Manya Singh</a>
       <nav aria-label="Sections">
-        <a href="#story">Story</a><a href="#work">Work</a><a href="#path">Timeline</a><a href="#background">Background</a><a href="#contact">Contact</a>
+        <a href="#story">Story</a><a href="#work">Work</a><a href="#samples">Samples</a><a href="#path">Timeline</a><a href="#background">Background</a><a href="#contact">Contact</a>
       </nav>
     </div>
     <div class="hero">
       <div class="hero-copy">
-        <span class="label">Finance · AI · Asset &amp; Wealth · Singapore</span>
+        <span class="label">Finance · Markets · AI · Singapore</span>
         <h1>I make finance numbers <em>faster to produce</em> and easier to check.</h1>
         <p class="lede">I run APAC planning cycles and build AI workflows that help finance scale with the controls built in: figures traceable to source, models validated automatically, so leaders can trust what they are reading. NUS Economics graduate, Honours (Distinction).</p>
-        <div class="chips"><span class="chip">GPA 4.18 / 5.00</span><span class="chip">CFA Level I Candidate</span><span class="chip">English · Hindi · Japanese</span><span class="chip">Finance × AI</span></div>
+        <div class="chips"><span class="chip">GPA 4.18 / 5.00</span><span class="chip">CFA Level I Candidate</span><span class="chip">English · Hindi · Japanese</span><span class="chip">Finance × Markets × AI</span></div>
       </div>
       <figure class="lanyard">
         <div class="swing" id="swing">
@@ -426,6 +433,175 @@ button.skill[aria-pressed="true"] { background: var(--grad-main); color: #fff; b
     </div>
   </section>
 
+  <section class="section" id="samples" aria-labelledby="samples-h">
+    <div class="section-head">
+      <h2 id="samples-h">Work samples</h2>
+      <p>Fourteen short notes and models built on public data, each a test of a desk skill: valuation, rates, FX, commodities, research and controls. Results are reported as found, including the weak ones. Where a case uses made-up trades, clients or pricing, the note says so. The full notes, Excel models and Python code are available on request.</p>
+      <div class="filters" role="group" aria-label="Filter work samples">
+        <button type="button" class="fbtn" data-s="all" aria-pressed="true">All</button>
+        <button type="button" class="fbtn" data-s="value" aria-pressed="false">Valuation and investing</button>
+        <button type="button" class="fbtn" data-s="markets" aria-pressed="false">Rates, FX, commodities and quant</button>
+        <button type="button" class="fbtn" data-s="ops" aria-pressed="false">Data, controls and clients</button>
+      </div>
+    </div>
+    <div class="cards">
+      <article class="card" data-cat="value" data-host data-skills="Valuation modelling|Excel modelling">
+        <div class="meta"><span class="tag">Valuation</span></div>
+        <h3>Amicro Technology IPO valuation</h3>
+        <p>A two-page valuation note and Excel model on a Hong Kong IPO of a robot navigation chip supplier, built from public offering information.</p>
+        <div class="result"><b>36% to 43%</b>a year of revenue growth to FY30 is what the HK$9.27 to HK$11.58 offer range requires</div>
+        <button type="button" class="toggle" data-toggle aria-expanded="false">What is inside<span class="chev" aria-hidden="true"></span></button>
+        <div class="more"><div class="more-in">
+          <ul><li>Scenario values, exit multiple and discount rate sensitivities, with a football field of value per share against the offer range.</li><li>The Excel model carries 14 integrity checks. Public information only.</li></ul>
+          <div class="stags"><span class="label">Skills</span><span>Valuation modelling</span><span>Excel modelling</span></div>
+        </div></div>
+      </article>
+      <article class="card" data-cat="value" data-host data-skills="Valuation modelling|Equity research|Financial statement analysis">
+        <div class="meta"><span class="tag">Equity</span></div>
+        <h3>Sembcorp Industries stock pitch</h3>
+        <p>A two-page pitch on Sembcorp after its first-half 2026 results, on public information only. It is a practice exercise and not investment advice.</p>
+        <div class="result"><b>S$6.50</b>12-month target price: a 19% total return including a 4.4% dividend yield</div>
+        <button type="button" class="toggle" data-toggle aria-expanded="false">What is inside<span class="chev" aria-hidden="true"></span></button>
+        <div class="more"><div class="more-in">
+          <ul><li>Bear, base and bull values of S$4.80, S$6.46 and S$8.03 against a S$5.68 close on 6 Nov 2026.</li><li>Covers the first-half results, leverage of 5.3x pro forma net debt to adjusted EBITDA, and the main risks.</li></ul>
+          <div class="stags"><span class="label">Skills</span><span>Valuation modelling</span><span>Equity research</span><span>Financial statement analysis</span></div>
+        </div></div>
+      </article>
+      <article class="card" data-cat="value" data-host data-skills="Private markets analysis|Excel modelling">
+        <div class="meta"><span class="tag">Private markets</span></div>
+        <h3>Secondaries and a continuation vehicle</h3>
+        <p>A snapshot of H1 2026 secondaries and fundraising, with an Excel model of a single-asset continuation vehicle for an illustrative Asia business-services asset.</p>
+        <div class="result"><b>USD 118bn</b>of secondary volume in H1 2026, 53% of it GP-led</div>
+        <button type="button" class="toggle" data-toggle aria-expanded="false">What is inside<span class="chev" aria-hidden="true"></span></button>
+        <div class="more"><div class="more-in">
+          <ul><li>LP portfolio pricing separates by exposure: buyout clears at 91% of NAV and Asia funds at 66%.</li><li>The top 20 fundraising closes took USD 171bn of the USD 312bn raised. Sources are the Jefferies secondary market review (July 2026) and With Intelligence.</li></ul>
+          <div class="stags"><span class="label">Skills</span><span>Private markets analysis</span><span>Excel modelling</span></div>
+        </div></div>
+      </article>
+      <article class="card" data-cat="value" data-host data-skills="Variance analysis|Financial statement analysis|Python">
+        <div class="meta"><span class="tag">Earnings quality</span></div>
+        <h3>Digital finance segment: growth against earnings quality</h3>
+        <p>A two-page note on a digital finance segment whose revenue grew fast while income lagged, with a bridge showing where each extra dollar went. Built from the group's Q2 and Q3 2026 earnings releases.</p>
+        <div class="result"><b>+63.9% vs +16.2%</b>revenue against segment operating income, year on year</div>
+        <button type="button" class="toggle" data-toggle aria-expanded="false">What is inside<span class="chev" aria-hidden="true"></span></button>
+        <div class="more"><div class="more-in">
+          <ul><li>Segment margin fell from 25.1% to 17.8% in a year. Each extra dollar of revenue became 6 cents of segment income.</li><li>Credit provisions and other operating costs took 57 cents of each extra dollar and sales and marketing 28 cents.</li><li>The 90+ day NPL ratio moved from 1.0% to 1.3% while loans principal rose 13.5% to USD 12.6bn.</li></ul>
+          <div class="stags"><span class="label">Skills</span><span>Variance analysis</span><span>Financial statement analysis</span><span>Python</span></div>
+        </div></div>
+      </article>
+      <article class="card" data-cat="markets" data-host data-skills="FX swap points and PV01|Excel modelling|Python">
+        <div class="meta"><span class="tag">Rates and FX</span></div>
+        <h3>FX swaps desk note, AUD/USD</h3>
+        <p>Forward and swap points for AUD/USD built from spot and two interest rates, the rate risk on a made-up book of six trades, and a rolling carry test across five currency pairs.</p>
+        <div class="result"><b>USD 7,874 per bp</b>net PV01 of the illustrative six-trade book</div>
+        <button type="button" class="toggle" data-toggle aria-expanded="false">What is inside<span class="chev" aria-hidden="true"></span></button>
+        <div class="more"><div class="more-in">
+          <ul><li>The monthly change in the three-month interest differential has a standard deviation of 18 to 21 bp across AUD, NZD, JPY, CAD and CHF against USD, with a largest move of 138 bp.</li><li>The rolling carry basket returned 1.2% a year with a Sharpe ratio of 0.24 and a maximum drawdown of 23%.</li><li>No SGD rate series or traded forwards were available, so the note does not estimate a cross-currency basis.</li></ul>
+          <div class="stags"><span class="label">Skills</span><span>FX swap points and PV01</span><span>Excel modelling</span><span>Python</span></div>
+        </div></div>
+      </article>
+      <article class="card" data-cat="markets" data-host data-skills="Curve construction and DV01|Python">
+        <div class="meta"><span class="tag">Rates and FX</span></div>
+        <h3>Curve construction and rates risk</h3>
+        <p>A USD Treasury curve bootstrapped three ways (linear, cubic spline and Nelson-Siegel), with key-rate DV01, an AUD/USD forward priced off the curve and a principal-components hedge test.</p>
+        <div class="result"><b>92.0%</b>of daily curve variance explained by three factors, 2006 to 2026</div>
+        <button type="button" class="toggle" data-toggle aria-expanded="false">What is inside<span class="chev" aria-hidden="true"></span></button>
+        <div class="more"><div class="more-in">
+          <ul><li>The forward-rate jump is 166 bp with linear interpolation and 17 bp with a spline.</li><li>Nelson-Siegel misses the input yields by up to 15 bp, and its key-rate DV01 sum is 21% off the parallel DV01.</li><li>A 10Y receiver's daily P&amp;L standard deviation falls from USD 446k to USD 129k with the PCA hedge, in sample and stated as such.</li></ul>
+          <div class="stags"><span class="label">Skills</span><span>Curve construction and DV01</span><span>Python</span></div>
+        </div></div>
+      </article>
+      <article class="card" data-cat="markets" data-host data-skills="P&amp;L explain and booking controls|Excel modelling|Python">
+        <div class="meta"><span class="tag">Commodities</span></div>
+        <h3>Oil desk P&amp;L explain and booking controls</h3>
+        <p>An illustrative Brent and WTI book on public NYMEX prices: 22 trades, a daily P&amp;L explain, and six booking controls tested against six seeded errors.</p>
+        <div class="result"><b>USD 0.00</b>gap between the explained P&amp;L buckets and independent P&amp;L</div>
+        <button type="button" class="toggle" data-toggle aria-expanded="false">What is inside<span class="chev" aria-hidden="true"></span></button>
+        <div class="more"><div class="more-in">
+          <ul><li>The seeded errors are a price slip, a duplicate, an extra zero on quantity, a flipped side, a Saturday trade date and a misspelt counterparty.</li><li>Excel and Python agree to about 5e-10, and a full refresh from source takes about 6 seconds. Book, trades and errors are illustrative.</li></ul>
+          <div class="stags"><span class="label">Skills</span><span>P&amp;L explain and booking controls</span><span>Excel modelling</span><span>Python</span></div>
+        </div></div>
+      </article>
+      <article class="card" data-cat="markets" data-host data-skills="Backtesting and testing|Python">
+        <div class="meta"><span class="tag">Commodities</span></div>
+        <h3>Crude inventories and the Brent-WTI spread</h3>
+        <p>A desk-monitor note on EIA weekly US crude stocks and spot prices: does an inventory surprise move WTI on release day, and how fast does the Brent-WTI spread revert?</p>
+        <div class="result"><b>About 10 days</b>half-life of the Brent-WTI spread, in trading days</div>
+        <button type="button" class="toggle" data-toggle aria-expanded="false">What is inside<span class="chev" aria-hidden="true"></span></button>
+        <div class="more"><div class="more-in">
+          <ul><li>The inventory surprise effect on release-day WTI is weak and fades in the second half of the sample (t-statistic -1.70, permutation p-value 0.10).</li><li>The spread spiked to US$37.62 a barrel on 2 Oct 2026 and was back to US$2.52 by 11 Nov.</li></ul>
+          <div class="stags"><span class="label">Skills</span><span>Backtesting and testing</span><span>Python</span></div>
+        </div></div>
+      </article>
+      <article class="card" data-cat="markets" data-host data-skills="Backtesting and testing|Python">
+        <div class="meta"><span class="tag">Quant research</span></div>
+        <h3>Commodity momentum backtest</h3>
+        <p>A monthly long/short momentum strategy across seven commodity ETFs, with a 10% volatility target per asset, a 5 bp trading cost and the lookback fixed on the first five years.</p>
+        <div class="result"><b>1.06 to 0.24</b>Sharpe ratio, in sample against out of sample</div>
+        <button type="button" class="toggle" data-toggle aria-expanded="false">What is inside<span class="chev" aria-hidden="true"></span></button>
+        <div class="more"><div class="more-in">
+          <ul><li>The bootstrap 95% interval is -0.55 to 1.03, the placebo p-value is 0.26 and the break-even cost is 54 bp.</li><li>The result is reported as found: the edge does not hold up out of sample.</li></ul>
+          <div class="stags"><span class="label">Skills</span><span>Backtesting and testing</span><span>Python</span></div>
+        </div></div>
+      </article>
+      <article class="card" data-cat="markets" data-host data-skills="Backtesting and testing|Python">
+        <div class="meta"><span class="tag">Quant research</span></div>
+        <h3>Cross-country equity signals</h3>
+        <p>Five signals fixed in advance and tested on 22 country ETFs: trained on 2006 to 2015, held out for 2016 to 2026, with a 10 bp cost and a placebo test that shuffles countries.</p>
+        <div class="result"><b>0.48 to 0.27</b>Sharpe ratio of the best training signal (1-month reversal) before costs, and about zero after 10 bp</div>
+        <button type="button" class="toggle" data-toggle aria-expanded="false">What is inside<span class="chev" aria-hidden="true"></span></button>
+        <div class="more"><div class="more-in">
+          <ul><li>A placebo p-value of 18% means shuffled countries often did as well, so the result is reported as a null.</li><li>The note also links the test design to my equity research agent.</li></ul>
+          <div class="stags"><span class="label">Skills</span><span>Backtesting and testing</span><span>Python</span></div>
+        </div></div>
+      </article>
+      <article class="card" data-cat="ops" data-host data-skills="Data quality controls|Excel modelling|Python">
+        <div class="meta"><span class="tag">Data and controls</span></div>
+        <h3>Equity data controls</h3>
+        <p>Reconciling corporate actions and earnings data across public sources: the Nasdaq split calendar, Yahoo prices on 23 listings in the US, Singapore and Hong Kong, and SEC EDGAR filings.</p>
+        <div class="result"><b>414 of 432</b>executed stock splits since May 2026 tie out across sources</div>
+        <button type="button" class="toggle" data-toggle aria-expanded="false">What is inside<span class="chev" aria-hidden="true"></span></button>
+        <div class="more"><div class="more-in">
+          <ul><li>18 splits break, 11 of them missing from the market data feed.</li><li>53 EPS comparisons were made against SEC filings, 10 of them restated for splits. A full refresh from source takes about 71 seconds.</li></ul>
+          <div class="stags"><span class="label">Skills</span><span>Data quality controls</span><span>Excel modelling</span><span>Python</span></div>
+        </div></div>
+      </article>
+      <article class="card" data-cat="ops" data-host data-skills="Trade finance analysis|Excel modelling|Python">
+        <div class="meta"><span class="tag">Trade and compliance</span></div>
+        <h3>Trade finance desk pack</h3>
+        <p>A USD 2.0m import financed three ways (open account, sight LC with an import loan, usance LC) and compared on one day-90 payable, with the FX tail and a sanctions-screening test.</p>
+        <div class="result"><b>SGD 37.8k</b>95th percentile 90-day FX cost on the payable, above the SGD 21.6k that the sight LC route saves</div>
+        <button type="button" class="toggle" data-toggle aria-expanded="false">What is inside<span class="chev" aria-hidden="true"></span></button>
+        <div class="more"><div class="more-in">
+          <ul><li>The break-even sight discount for the sight LC route is 0.97%. Pricing inputs are illustrative.</li><li>Screening test on 1,962 edited sanctioned names and 3,000 registrant names: stripping generic words lifts recall at a cutoff of 90 from 72.7% to 88.7%, at 28 alerts per 3,000 names against 4.</li><li>It loses on one-letter typos and triples review hours at a cutoff of 80.</li></ul>
+          <div class="stags"><span class="label">Skills</span><span>Trade finance analysis</span><span>Excel modelling</span><span>Python</span></div>
+        </div></div>
+      </article>
+      <article class="card" data-cat="ops" data-host data-skills="Client analytics|Python">
+        <div class="meta"><span class="tag">Client analytics</span></div>
+        <h3>Fixed income eSales client monitor</h3>
+        <p>A client activity monitor on a simulated RFQ blotter of 60 clients and 36,598 RFQs, driven by two years of real EURUSD, USDSGD, USDJPY and US 10Y moves.</p>
+        <div class="result"><b>8 of 8</b>planted decliners caught, with about a quarter of the false alerts of a traded-notional rule</div>
+        <button type="button" class="toggle" data-toggle aria-expanded="false">What is inside<span class="chev" aria-hidden="true"></span></button>
+        <div class="more"><div class="more-in">
+          <ul><li>Tiering clients by notional against revenue moves 20 of 60 clients.</li><li>Clustering into four groups recovers the client types at an adjusted Rand index of 0.63.</li><li>Clients and RFQs are simulated and labelled as such, because no client-level data is public.</li></ul>
+          <div class="stags"><span class="label">Skills</span><span>Client analytics</span><span>Python</span></div>
+        </div></div>
+      </article>
+      <article class="card" data-cat="ops" data-host data-skills="Working capital analysis|Financial statement analysis|Excel modelling|Python">
+        <div class="meta"><span class="tag">Transaction banking</span></div>
+        <h3>Working capital and supply chain finance screen</h3>
+        <p>A screen of seven US-listed corporates built from SEC filings: days sales, inventory and payables outstanding, the cash conversion cycle, and what a payables extension could release for one worked client.</p>
+        <div class="result"><b>+25 days</b>average rise in payable days across all seven companies since FY2021</div>
+        <button type="button" class="toggle" data-toggle aria-expanded="false">What is inside<span class="chev" aria-hidden="true"></span></button>
+        <div class="more"><div class="more-in">
+          <ul><li>Apple, Dell and HP hold 90% of the USD 149bn of payables. The set is Flex, Seagate, Western Digital, Micron, Apple, Dell and HP.</li><li>For the worked client, Flex, a 15-day extension releases USD 1.04bn, 43.5% of its cash. Bank revenue, take-up and funding cost are illustrative.</li></ul>
+          <div class="stags"><span class="label">Skills</span><span>Working capital analysis</span><span>Financial statement analysis</span><span>Excel modelling</span><span>Python</span></div>
+        </div></div>
+      </article>
+    </div>
+  </section>
+
   <section class="section" id="path" aria-labelledby="path-h">
     <div class="section-head">
       <h2 id="path-h">Timeline</h2>
@@ -467,8 +643,15 @@ button.skill[aria-pressed="true"] { background: var(--grad-main); color: #fff; b
       <div class="panel">
         <h3>Education and leadership</h3>
         <p><b>National University of Singapore.</b> Bachelor of Social Sciences (Economics), Honours (Distinction), specialisation in Monetary and Financial Economics. Commendation and Honour Roll (Distinction). RC Scholar.</p>
-        <p>Finance coursework: International Finance II (A), International Finance I (A-), Money and Banking I (A-), Macroeconomic Analysis I (A-), Issues in Macroeconomics (A-).</p>
-        <p>Finance Secretary of Residential College 4 and Finance Lead of the NUS FinTech Society.</p>
+        <p class="label">Coursework highlights</p>
+        <div class="grades"><span>International Finance II <b>A</b></span><span>Development Economics <b>A</b></span><span>Global Economic History <b>A</b></span><span>A Social Critique of Markets in Singapore <b>A</b></span><span>How Rich Should Anyone Be? <b>A</b></span><span>Ideas to Pitches: Tech, Innovation &amp; Entrepreneurship <b>A</b></span><span>Design Thinking <b>A</b></span><span>International Finance I <b>A-</b></span><span>Money and Banking I <b>A-</b></span><span>Macroeconomic Analysis I <b>A-</b></span><span>Issues in Macroeconomics <b>A-</b></span></div>
+        <p class="label">Leadership</p>
+        <ul class="lead">
+          <li><b>Finance Secretary, Residential College 4.</b> A S$53,000 budget across 60+ interest groups, and financial planning and audit for two inter-college events.</li>
+          <li><b>Finance Lead, NUS FinTech Society.</b> Managed the society's budget and raised sponsorship.</li>
+          <li><b>House Leader, Draco PSS Residential College,</b> and member of the 9th College Students' Committee.</li>
+          <li><b>Certified Mental Health Awareness Peer Supporter,</b> Residential College 4.</li>
+        </ul>
         <p><b>CFA Level I Candidate.</b> Preparing for the CFA Institute's Level I exam.</p>
       </div>
       <div class="panel">
@@ -480,6 +663,7 @@ button.skill[aria-pressed="true"] { background: var(--grad-main); color: #fff; b
           <div><dt class="label">Credit</dt><dd><button type="button" class="skill" data-k="Financial statement analysis" aria-pressed="false">Financial statement analysis</button><button type="button" class="skill" data-k="Bank credit analysis" aria-pressed="false">Bank credit analysis</button></dd></div>
           <div><dt class="label">Data and AI</dt><dd><button type="button" class="skill" data-k="Python" aria-pressed="false">Python</button><span>SQL</span><span>Power Query</span><span>Excel (VBA)</span><span>R</span><button type="button" class="skill" data-k="Agentic AI workflows (Claude)" aria-pressed="false">Agentic AI workflows (Claude)</button><button type="button" class="skill" data-k="AI-assisted data cleaning" aria-pressed="false">AI-assisted data cleaning</button></dd></div>
           <div><dt class="label">Investment</dt><dd><button type="button" class="skill" data-k="Asset allocation" aria-pressed="false">Asset allocation</button><button type="button" class="skill" data-k="Risk-return assessment" aria-pressed="false">Risk-return assessment</button><button type="button" class="skill" data-k="Portfolio rebalancing" aria-pressed="false">Portfolio rebalancing</button><button type="button" class="skill" data-k="Equity screening" aria-pressed="false">Equity screening</button></dd></div>
+          <div><dt class="label">Markets and research</dt><dd><button type="button" class="skill" data-k="Valuation modelling" aria-pressed="false">Valuation modelling</button><button type="button" class="skill" data-k="Equity research" aria-pressed="false">Equity research</button><button type="button" class="skill" data-k="Private markets analysis" aria-pressed="false">Private markets analysis</button><button type="button" class="skill" data-k="Excel modelling" aria-pressed="false">Excel modelling</button><button type="button" class="skill" data-k="Backtesting and testing" aria-pressed="false">Backtesting and testing</button><button type="button" class="skill" data-k="Curve construction and DV01" aria-pressed="false">Curve construction and DV01</button><button type="button" class="skill" data-k="FX swap points and PV01" aria-pressed="false">FX swap points and PV01</button><button type="button" class="skill" data-k="P&amp;L explain and booking controls" aria-pressed="false">P&amp;L explain and booking controls</button><button type="button" class="skill" data-k="Data quality controls" aria-pressed="false">Data quality controls</button><button type="button" class="skill" data-k="Client analytics" aria-pressed="false">Client analytics</button><button type="button" class="skill" data-k="Trade finance analysis" aria-pressed="false">Trade finance analysis</button><button type="button" class="skill" data-k="Working capital analysis" aria-pressed="false">Working capital analysis</button></dd></div>
           <div><dt class="label">Languages</dt><dd><span>English (native)</span><span>Hindi (native)</span><span>Japanese (intermediate)</span></dd></div>
         </dl>
       </div>
@@ -492,7 +676,7 @@ button.skill[aria-pressed="true"] { background: var(--grad-main); color: #fff; b
 
   <section class="contact" id="contact" aria-labelledby="contact-h">
     <h2 id="contact-h">Let's talk</h2>
-    <p>Open to roles in finance and AI in Singapore, including private banking and wealth management. I am happy to talk through any of this work, in person or by email.</p>
+    <p>Open to roles in finance, markets and AI in Singapore, including private banking and wealth management. I am happy to talk through any of this work, in person or by email.</p>
     <div class="emails">
       <div class="erow"><span class="email">singhmanya1112@gmail.com</span><button type="button" class="copy" data-copy>Copy email</button></div>
       <div class="erow"><span class="email">singh.manya@u.nus.edu</span><button type="button" class="copy" data-copy>Copy school email</button></div>
@@ -503,7 +687,7 @@ button.skill[aria-pressed="true"] { background: var(--grad-main); color: #fff; b
     </div>
     <p class="note" id="copy-note" aria-live="polite"></p>
   </section>
-  <footer>Manya Singh · Singapore · Updated October 2026</footer>
+  <footer>Manya Singh · Singapore · Updated November 2026</footer>
 </main>
 
 <script>
@@ -521,7 +705,12 @@ button.skill[aria-pressed="true"] { background: var(--grad-main); color: #fff; b
   const calm = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   // work and timeline filters
-  const wbtns = [...document.querySelectorAll("[data-f]")], cards = [...document.querySelectorAll(".card")];
+  const wbtns = [...document.querySelectorAll("[data-f]")], cards = [...document.querySelectorAll("#work .card")];
+  const sbtns = [...document.querySelectorAll("[data-s]")], scards = [...document.querySelectorAll("#samples .card")];
+  sbtns.forEach((b) => b.addEventListener("click", () => {
+    sbtns.forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+    scards.forEach((c) => { c.hidden = b.dataset.s !== "all" && c.dataset.cat !== b.dataset.s; });
+  }));
   wbtns.forEach((b) => b.addEventListener("click", () => {
     wbtns.forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
     cards.forEach((c) => { c.hidden = b.dataset.f !== "all" && c.dataset.cat !== b.dataset.f; });
@@ -551,14 +740,15 @@ button.skill[aria-pressed="true"] { background: var(--grad-main); color: #fff; b
       if (hit) m.classList.contains("card") ? w++ : t++;
     });
     bar.hidden = !name;
-    if (name) barText.textContent = `Where I used ${name}: ${w} piece${w === 1 ? "" : "s"} of selected work, ${t} timeline entr${t === 1 ? "y" : "ies"}.`;
+    if (name) barText.textContent = `Where I used ${name}: ${w} piece${w === 1 ? "" : "s"} of work, ${t} timeline entr${t === 1 ? "y" : "ies"}.`;
     return w;
   };
   chips.forEach((c) => c.addEventListener("click", () => {
     if (c.getAttribute("aria-pressed") === "true") return pick(null);
-    wbtns[0].click(); tbtns[0].click();
+    wbtns[0].click(); sbtns[0].click(); tbtns[0].click();
     const w = pick(c.dataset.k);
-    document.getElementById(w ? "work" : "path").scrollIntoView({ behavior: calm ? "auto" : "smooth", block: "start" });
+    const first = document.querySelector(".card.hit");
+    (first ? first.closest("section") : document.getElementById("path")).scrollIntoView({ behavior: calm ? "auto" : "smooth", block: "start" });
   }));
   document.getElementById("skillclear").addEventListener("click", () => pick(null));
 
